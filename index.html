@@ -1,0 +1,27 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./app.css">
+  <title>Check Certification</title>
+  <script src="jquery.slim.min.js"></script>
+</head>
+<body>
+  <div id="app-container">
+    <div class="title-bar">Check Certification</div>
+    <div class="content-box">
+      <table class="form-table">
+        <tr><td class="col-1">
+          <input class="form-input" type="text" id="address" placeholder="Address"/>
+        </td><td>
+          <a href="#"><div class="form-submit" onclick="getCertStatus('KT1RV5ozubGUeNyufDR2U8MMqtXET8TxWcwN','#address','#result-bar')">Check</div></a>
+        </td></tr>
+        <tr><td colspan="2">
+          <div id="result-bar" class="result-bar"></div>
+        </td></tr>
+      </table>
+    </div>
+  </div>
+  <script src="verifier.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cryptonomic/conseiljs/dist-web/conseiljs.min.js"
+integrity="sha384-3S7SLnF0vWFuX0qraO4vpX6upkLADLtmzndMZlPRhAmqYyENSbYKtQfaVR5K65jX" crossorigin="anonymous"></script>
+</body>
+</html>
